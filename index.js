@@ -16,11 +16,7 @@ AWS.config.update({
 
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
 
-app.use(cors(
-  {
-  origin: 'https://dynamic-todoapp1.onrender.com/'
-}
-));
+app.use(cors());
 app.use(bodyParser.json());
 
 
